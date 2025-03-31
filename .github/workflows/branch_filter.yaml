@@ -1,4 +1,4 @@
-name: branch-filter
+name: branch-filter2
 on:
   push:
     branches: ["dev"]
