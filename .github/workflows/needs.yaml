@@ -8,7 +8,7 @@ jobs:
     - name: echo
       run: echo "job1 done"
 
-jobs:
+
   job2:
     runs-on: ubuntu-latest
     needs: [job1]
@@ -16,14 +16,12 @@ jobs:
     - name: echo
       run: echo "job2 done"
     
-jobs:
   job3:
     runs-on: ubuntu-latest
     steps:
     - name: echo
       run: echo "job3 done"
 
-jobs:
   job4:
     runs-on: ubuntu-latest
     needs: [job3]
