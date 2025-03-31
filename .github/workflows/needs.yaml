@@ -20,7 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: echo
-      run: echo "job3 done"
+      run: |
+        echo "job3 done"
+        exit 1
 
   job4:
     runs-on: ubuntu-latest
