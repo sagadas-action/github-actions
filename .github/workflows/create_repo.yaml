@@ -1,5 +1,5 @@
- name: create-repo
- on: 
+name: create-repo
+on: 
   workflow_dispatch:
     inputs:
       prefix:
