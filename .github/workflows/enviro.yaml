@@ -5,7 +5,7 @@ jobs:
   get-env:
     runs-on: ubuntu-latest
     steps:
-    - name: check env & secret2
+    - name: check env & secret3
       run: |
         echo ${{ vars.level }}
         echo ${{ secrets.key }}
