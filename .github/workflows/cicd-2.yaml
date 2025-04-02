@@ -35,6 +35,8 @@ jobs:
   set-environment: 
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    outputs:
+      environment: ${{ steps.set-env.outputs.environment }}
     steps:
     - name: set env
       id: set-env
@@ -139,7 +141,7 @@ jobs:
       uses: actions/checkout@v4
     - name: gh auth login
       run: |
-        echo ${{ secrets.PERSONAL_ACCESS_TOKEN }} | gu auth login --with-token
+        echo ${{ secrets.PERSONAL_ACCESS_TOKEN }} | gh auth login --with-token
     - name: create branch
       run: |
         git checkout -b release/${{ github.run_id }}
