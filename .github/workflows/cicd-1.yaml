@@ -61,7 +61,7 @@ jobs:
     needs: [image-build]
     permissions:
       id-token: write
-      contens: read
+      contents: read
     steps:
     - name: checkout
       uses: actions/checkout@v4
