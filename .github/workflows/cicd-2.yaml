@@ -124,7 +124,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "Environment : ${{ needs.set-environment.outputs.environment }}, Deploy Result: ${{ steps.status.outcome }}, Respository ${{ github.repository }}."
+                  "text": "Environment : ${{ matrix.environment }}, Deploy Result: ${{ steps.status.outcome }}, Respository ${{ github.repository }}."
                 }
               }
             ]
