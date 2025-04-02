@@ -1,10 +1,10 @@
-name:
-  on:
-    pull_request:
-      types: [opened, synchronize, closed]
-      branches: [dev]
-      paths:
-        - 'my-app/**'
+name: cicd
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+    branches: [dev]
+    paths:
+      - 'my-app/**'
 
 jobs:
   test:
