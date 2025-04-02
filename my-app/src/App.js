@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn GithubAction Okay CICD
+          Learn GithubAction Okay 2번째 바꾸었다...
         </a>
       </header>
     </div>
