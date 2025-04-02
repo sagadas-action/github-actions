@@ -1,9 +1,10 @@
 name:
-  on: 
-    push: [opened, synchronize, closed]
-    branches: [dev]
-    paths:
-    - 'my-app/**'
+  on:
+    pull_request:
+      types: [opened, synchronize, closed]
+      branches: [dev]
+      paths:
+        - 'my-app/**'
 
 jobs:
   test:
