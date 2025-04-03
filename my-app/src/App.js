@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn GithubAction VERSION 5
+          Learn GithubAction LAST DANCE
         </a>
       </header>
     </div>
