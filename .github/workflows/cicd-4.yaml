@@ -54,7 +54,7 @@ jobs:
         if [[ ${{ github.ref_type }} == "branch" ]]; then
           echo "environment=dev" >> $GITHUB_OUTPUT  
           if [[ ${{ github.base_ref }} == "master" ]]; then
-            echo "environment="staging" >> $GITHUB_OUTPUT
+            echo "environment=staging" >> $GITHUB_OUTPUT
           fi
         fi
     - name: check env
